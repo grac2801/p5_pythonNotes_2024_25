@@ -39,7 +39,10 @@ print('I am {0} years old, and my favorite color is {1}.'.format(myAge, favorite
 print(f'I am {myAge} years old, and my favorite color is {favoriteColor}')
 
 
-
+print('\n\n********************')
+print('concatenation')
+print('********************')
+print('Alice' + ' and ' + "Jose")
 
 
 
