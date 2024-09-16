@@ -26,7 +26,8 @@ hours = int(totalMinutes / 60)
 minutesRemaining = totalMinutes % 60
 print(f'There are {hours:d} hour(s) and {minutesRemaining:d} minute(s) in {totalMinutes:d} minutes')
 
-print(f'Question 1')
-print('a)', '9 -3 = ', (9-3))
+x = 4
+x += 3
+print(x)
 
 
