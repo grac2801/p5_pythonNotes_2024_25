@@ -43,7 +43,7 @@ The length of a month varies from 28-31 days. Create a program which
 reads the name of a month from user as a string, then your program 
 should display the number of days in that month.
 Display "28 or 29 days" for February.
-http://www.tovresearch.com/definitions/daymonthchart.html
+https://c.tadst.com/gfx/1200x675/calendar-2024-printable.png?1
 '''   
 
 
