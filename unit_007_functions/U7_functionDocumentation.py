@@ -31,14 +31,7 @@ if __name__ == '__main__':
     print(x)
     
     
-    comment = ''' 
-    1- Returns number of letter d instances
-              2- String --> int
-    3-selectOnly_d('day of the dead') --> 3
-    '''
-    
-    print(comment)
-    
+   
     
     
     
