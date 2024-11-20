@@ -11,7 +11,23 @@ import random
 
 
 # functions
+def removeLastItemInList(L):
+    '''
+    list --> list
+    Removes last item in my list
+    removeLastItemInList([1, 2, 3)] --> [1, 2]
+    '''
+    del L[-1]
+    return L
 
+def removeFirstItemWithPop(passedList):
+    '''
+    list --> list
+    removes first item in my list
+    removeFirstItemWithPop([1, 2, 3]) --> [2, 3]
+    '''
+    passedList.pop(0)
+    return passedList
 
 if __name__ == '__main__':
     print('\n\n*******************')
@@ -111,6 +127,114 @@ if __name__ == '__main__':
     print(marxes) # extend and += do the same job
     
     
+    print('\n\n*******************')
+    print('insert items to a list')
+    print('*******************')
+    marxes = ['Groucho', 'Chico', 'Harpo', 'Hunter', 'Mario']
+    print(marxes)
+    # Add new item at the start of marxes --> "first"
+    marxes.insert(0, "first")
+    print(marxes)
+    
+    
+    print('\n\n*******************')
+    print('Ways to delete or remove items from a list')
+    print('*******************')
+    marxes = ['Groucho', 'Chico', 'Harpo', 'Hunter', 'Mario']
+    print(marxes)
+    del marxes[0] # delete using del (index)
+    print(marxes)
+    
+    # delete using value
+    marxes.remove("Hunter")
+    print(marxes)
+    
+    
+    # remove using pop() | Default value = last value
+    marxes.pop()
+    print(marxes)
+    
+    # remove first item using pop()
+    marxes.pop(0)
+    print(marxes)
+    
+    
+    print('\n\n*******************')
+    print('find the index')
+    print('*******************')
+    marxes = ['Groucho', 'Chico', 'Harpo', 'Hunter', 'Mario']
+    print(marxes)
+    
+    print(marxes.index('Hunter'))
+    
+    
+    is_here = "mario" in marxes
+    print(is_here)
+    
+    
+    
+    print('\n\n*******************')
+    print('join()')
+    print('*******************')
+    marxes = ['Groucho', 'Chico', 'Harpo', 'Hunter', 'Mario']
+    print(marxes)
+    print(', '.join(marxes))
+    
+    
+    friends = ['Harry', 'Hermione', 'Ron']
+    print(friends)
+    separator = ' & '
+    joined_names = separator.join(friends)
+    print(joined_names)
+    
+    print('\n\n*******************')
+    print('sort()')
+    print('*******************')
+    marxes = ['Groucho', 'Chico', 'Harpo', 'Hunter', 'Mario']
+    print(marxes)
+    # first way --> sorts, but makes a copy of the array.
+    sorted_marxes = sorted(marxes)
+    marxes[0] = 'New'
+    print(marxes)
+    print(sorted_marxes)
+    
+    # sort in place | No copy is made
+    marxes = ['Groucho', 'Chico', 'Harpo', 'Hunter', 'Mario']
+    print(marxes)
+    marxes.sort(reverse=True)
+    print(marxes)
+    
+    
+    print(len(marxes))
+    
+    
+    print('\n\n*******************')
+    print('pass a list as a  parameter to a function')
+    print('*******************')
+    numbers = [4, 8, 52, 4.2, 6, 45]
+    print(removeLastItemInList(numbers))
+    
+    a = [1, 2, 3]
+    print('a = ', a)
+    b = a[:]
+    print('b = ', b)
+    a[0] = 1000
+    print('a = ', a)
+    print('b = ', b)
+    
+    #===============================================================================================
+    # Make a list of 4 names, pass them as a list parameter, and remove first item using pop()
+    #===============================================================================================
+    listToSendToFx = ['Ella', 'Dominic', 'Guillermo', 'Ethan']
+    print(removeFirstItemWithPop(listToSendToFx))
+    
+    
+    print('\n\n*******************')
+    print('min and max')
+    print('*******************')
+    myNumbers = [4, 8.2, 9, 6, 3.1]
+    print(min(myNumbers))
+    print(max(myNumbers))
     
     
     
