@@ -72,16 +72,12 @@ if __name__ == '__main__':
     # STUDENT ACTIVITY -> Add a point to every grade in newGrades and then print it.
     #===============================================================================================
     newGrades = [[9, 8, 7, 8],
-            [8, 7, 6, 8],
-            [5, 9, 7, 9]
-        ]
-    
+                 [8, 7, 6, 8],
+                 [5, 9, 7, 9]
+                ]
     for row in range(len(newGrades)):
         for col in range(len(newGrades[row])):
             newGrades[row][col] += 1
-
-
-
     #no indices
     print("print it")
     for r in newGrades:
